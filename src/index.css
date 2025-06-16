@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-body{
+  background-color: #0B2434;
+  padding: 25px;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Karla';
+  font-weight: 700;
+  color: black;
+}
+
+main{
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: .5rem;
+}
+
+.form-fill{
+  display: flex;
+  flex-direction: column;
+  font-size:60px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  color:#3a3147;
+  margin-bottom: 20px;
+}
+
+.login-form{
+  margin-right:700px;
+  padding-top:15%;
+}
+
+.login-form input{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.button{
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.form-article{
+  width:100%;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:relative;
+  background-image: url(Sign-up.jpg);
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.roll{
+  background-color: #5035FF;
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px 20px;
+  border: none;
+  border-radius: .3rem;
+  margin-bottom: .5rem;
+}
+.title{
+  margin-top: .6rem;
+  font-size: 1.6rem;
+}
+.instructions{
+  font-size: .7rem;
+  margin: 0 10px;
+}
+.count{
+  font-size: 1.1rem;
+}
+.timer{
+  font-size: 1.1rem;
+}
+.start{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: .8rem;
+}
+
+
+.dice{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 65px;
+  height: 65px;
+  background-color: #FFFFFF;
+  margin: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+  border-radius: 8%;
+  padding: 6px;
+  place-self: center;
+}
+
+.dice.held{
+  background-color: #59E391;
+}
+
+
+.dot{
+  background-color: black;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  place-self: center;
+}
+.top{
+  grid-row-start: 1;
+}
+.center{
+  grid-row-start: 2;
+}
+.bottom{
+  grid-row-start: 3;
+}
+.left{
+  grid-column-start: 1;
+}
+.middle{
+  grid-column-start: 2;
+}
+.right{
+  grid-column-end: -1;
+}
+
+@media only screen and (min-width: 500px) {
+  .container{
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 650px;
+    max-height: 280px;
+    margin-bottom: 1rem;
+  }
+  .dice{
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+  }
+  .dot{
+    width: 15px;
+    height: 15px;
+  }
+  .roll{
+    padding: 10px 24px;
+    font-size: 22px;
+  }
+  .instructions{
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  .title{
+    font-size: 2rem;
+    margin-bottom: .4rem;
+  }
+  .start{
+    gap: 2rem;
+  }
+  .count{
+    font-size: 1.5rem;
+  }
+  .timer{
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .main-body{
+    padding: 2.5rem;
+  }
+  main{
+    border-radius: .4rem;
+  }
+  .instructions{
+    font-size: 1.2rem;
+  }
+  .title{
+    font-size: 2.2rem;
+  }
+  .timer{
+    font-size: 2rem;
+  }
+  .count{
+    font-size: 2rem;
+  }
+}
+
